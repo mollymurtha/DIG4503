@@ -1,12 +1,12 @@
 <html>
-    <body>
+    <body></body>
         <script>
             function read(event) {
 
                 event.preventDefault();
 
                     let element = document.querySelector("#reader");
-
+                    // fetch
                     fetch("/api/" + element.value, {
                         "method": "post"
                     })
