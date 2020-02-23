@@ -12,7 +12,7 @@ class App extends React.Component {
       <h2>Reporting</h2>
         <div id="reportingArea"></div>
       </div>
-    )
+    );
   }
 }
 
