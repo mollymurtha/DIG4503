@@ -1,3 +1,5 @@
+const cors = require("cors");
+App.use(cors());
 const Express = require("express");
 const App = Express();
 const port = 80;
@@ -10,7 +12,7 @@ const pokemon = require(json-pokemon);
 // add express middleware
 App.use(Express.json());
 // add static route
-App.get("/", Express.static("public"));
+App.get("/", Express.static("client/build"));
 
 
 App.get("/id/:id", (req, res) => {

@@ -1,42 +1,36 @@
 <html>
-    <body></body>
+    <body>
         <script>
             function read(event) {
 
                 event.preventDefault();
 
-                    let element = document.querySelector("#reader");
-                    // fetch
-                    fetch("/api/" + element.value, {
-                        "method": "post"
+                    let element = document.querySelector("#ID");
+
+                    fetch("/name/" + element.value).then((res) => {
+                        return res.json();
                     })
-                .then((res) => {
-                     return res.json();
-                })
-                .then((processed) => {
-    
-                    let reporting = document.querySelector("#reportingArea");
+                    .then((processed) =>{
 
-                    if(processed.error) {
-                        reporting.innerHTML = processed.error;
-                    } else {
-                        reporting.innerHTML = processed.number;
-                    }
-
-                });
+                        let reporting = document.querySelector("#reporting");
+                    
+                        if(processed.error){
+                            reporting.innerHTML = processed.error;
+                        }
+                        else{
+                            reporting.innerHTML = processed.name;
+                        }
+                    });
             }
 
             function create(event) {
 
                 event.preventDefault();
 
-                let element = document.querySelector("#creator");
+                let element = document.querySelector("#NAME");
 
-                fetch("/api/" + element.value, {
-                    "method": "post"
-                })
-                .then((res) => {
-                    return res.json();
+                fetch("/name/" + element.value).then((res) => {
+                        return res.json();
                 })
                 .then((processed) => {
 
