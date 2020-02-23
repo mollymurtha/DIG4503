@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import IdSearch from './components/IdSearch/index.js';
 import NameSearch from './components/NameSearch/index.js';
