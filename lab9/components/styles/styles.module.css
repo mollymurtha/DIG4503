@@ -1,0 +1,57 @@
+.result{
+    font-family: helvetica;
+    background-color:slateblue;
+    border: 5px solid maroon;
+    padding:20px;
+    margin:50px;
+    width:150px; 
+}
+.input{
+    font-family: helvetica;
+    color: slateblue;
+    font-size:18px;
+}
+.general{
+    font-family: helvetica;
+    background-color: grey;
+    background-size: contain;
+    font-size: 18px;
+    padding: 8px;
+    border: groove 5px maroon;
+    border-radius: 20px;
+    width:80%;
+}
+.input{
+    font-family: helvetica;
+    padding: 5px;
+    margin:4px;
+}
+.button{
+    font-family: helvetica;
+    background-color: maroon;
+    color:white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline;
+    margin: 4px 2px;
+    padding: 10px;
+}
+.button:hover{
+    font-family: helvetica;
+    background-color:white;
+    color:maroon;
+    box-shadow: 0 16px 8px 0 rgba(0,0,0,0.25);
+}
+.links{
+    font-family: helvetica;
+    border: 4px solid white;
+    background-size: contain;
+    text-align: center;
+    padding:14px;
+    position: relative;
+    float:left;
+}
+.link:hover{
+    background-color:rgba(0, 0, 0, 0.336);
+}
